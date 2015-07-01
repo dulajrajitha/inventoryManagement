@@ -7,6 +7,7 @@ package Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -14,12 +15,19 @@ import javax.persistence.Id;
  */
 @Entity
 public class Product {
+
     @Id
     private int id;
     private String name;
+
+    @OneToOne
     private Brand brand;
+
+    @OneToOne
     Supplier supplier;
-    Category category ;
+
+    @OneToOne
+    Category category;
 
     public int getId() {
         return id;
@@ -60,6 +68,5 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
-    
-    
+
 }

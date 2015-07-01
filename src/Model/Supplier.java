@@ -14,6 +14,7 @@ import javax.persistence.Id;
  */
 @Entity
 public class Supplier {
+
     @Id
     private int id;
     private String name;
@@ -78,5 +79,5 @@ public class Supplier {
     public void setOtherNotes(String otherNotes) {
         this.otherNotes = otherNotes;
     }
-    
+
 }

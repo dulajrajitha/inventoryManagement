@@ -7,6 +7,7 @@ package Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -17,8 +18,13 @@ public class Purchase {
 
     @Id
     private int id;
+
+    @OneToOne
     private Supplier supplier;
+
+    @OneToOne
     private Product product;
+
     private int quantity;
     private float price;
 
@@ -61,7 +67,5 @@ public class Purchase {
     public void setPrice(float price) {
         this.price = price;
     }
-    
-    
 
 }
