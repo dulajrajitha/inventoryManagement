@@ -32,13 +32,10 @@ public class ViewAllCustomers extends javax.swing.JPanel {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+
             },
             new String [] {
-                "Name", "Contact No", "E-mail", "Contact Address", "Customer Type", "Other Notes"
+                "Name", "Contact No", "E-mail", "Address", "Type", "Other"
             }
         ) {
             Class[] types = new Class [] {

@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View.Product;
+package View.Category;
 
 /**
  *
  * @author dula
  */
-public class ViewProducts extends javax.swing.JPanel {
+public class ViewCategories extends javax.swing.JPanel {
 
     /**
-     * Creates new form ViewProducts
+     * Creates new form ViewCategories
      */
-    public ViewProducts() {
+    public ViewCategories() {
         initComponents();
     }
 
@@ -35,11 +35,11 @@ public class ViewProducts extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Name", "Brand", "Supplier"
+                "Category Name"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -59,10 +59,10 @@ public class ViewProducts extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(13, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(13, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

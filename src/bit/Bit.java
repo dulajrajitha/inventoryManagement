@@ -41,7 +41,7 @@ public class Bit {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session=sessionFactory.openSession();
         session.beginTransaction();
-        session.save(customer);
+        session.update(customer);
         session.getTransaction().commit();
         session.close();
         
