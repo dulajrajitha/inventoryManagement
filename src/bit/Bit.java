@@ -36,7 +36,7 @@ public class Bit {
         //login.main(null);
         Customer customer=new Customer();
         customer.setId(1);
-        customer.setUserName("Dulaj");
+        customer.setName("Dulaj");
         
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session=sessionFactory.openSession();

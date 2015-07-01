@@ -21,6 +21,47 @@ public class Customer {
     private String contactNumber;
     private String email;
     private String contactAddress;
+    private String customerType;
+    private String otherNotes;
+
+    public String getCustomerType() {
+        return customerType;
+    }
+
+    public void setCustomerType(String customerType) {
+        this.customerType = customerType;
+    }
+
+    public String getOtherNotes() {
+        return otherNotes;
+    }
+
+    public void setOtherNotes(String otherNotes) {
+        this.otherNotes = otherNotes;
+    }
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getContactAddress() {
+        return contactAddress;
+    }
+
+    public void setContactAddress(String contactAddress) {
+        this.contactAddress = contactAddress;
+    }
     
 
     public int getId() {
