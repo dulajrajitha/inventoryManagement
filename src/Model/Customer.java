@@ -24,6 +24,10 @@ public class Customer {
     private String customerType;
     private String otherNotes;
 
+    public Customer() {
+    }
+
+    
     public String getCustomerType() {
         return customerType;
     }

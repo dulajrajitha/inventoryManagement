@@ -5,6 +5,9 @@
  */
 package login;
 
+import View.Customer.AddCustomer;
+import javax.swing.JPanel;
+
 /**
  *
  * @author dula
@@ -105,6 +108,11 @@ public class AdminView extends javax.swing.JFrame {
         jMenu3.setText("Invioce");
 
         jMenuItem11.setText("New Sale");
+        jMenuItem11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuItem11MouseClicked(evt);
+            }
+        });
         jMenu3.add(jMenuItem11);
 
         jMenuItem12.setText("New Purchase");
@@ -184,8 +192,24 @@ public class AdminView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
+        System.out.println("hhhhhhhhhhh");
+        JPanel addCustomerPanel = new AddCustomer();
+        this.getContentPane().add(addCustomerPanel);
+//        mainPanel = addCustomerPanel;
+        this.invalidate();
+        this.validate();
+        this.repaint();
+        this.setVisible(true);
+        frameInit();
+        System.out.println("hhhhhhhhhhh");
+        //this.update(null);
+//        this.update(null);
+        
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem11MouseClicked
 
     /**
      * @param args the command line arguments

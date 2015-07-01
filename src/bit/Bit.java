@@ -32,19 +32,20 @@ public class Bit {
 //       
 //        session.close();
      
-        //Login login =new Login();
-        //login.main(null);
-        Customer customer=new Customer();
-        customer.setId(1);
-        customer.setName("Dulaj");
+        Login login =new Login();
+        login.main(null);
         
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-        Session session=sessionFactory.openSession();
-        session.beginTransaction();
-        session.update(customer);
-        session.getTransaction().commit();
-        session.close();
-        
+//        Customer customer=new Customer();
+//        customer.setId(1);
+//        customer.setName("Dulaj");
+//        
+//        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+//        Session session=sessionFactory.openSession();
+//        session.beginTransaction();
+//        session.update(customer);
+//        session.getTransaction().commit();
+//        session.close();
+//        
         
         
     }
