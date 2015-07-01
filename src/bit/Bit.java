@@ -5,7 +5,11 @@
  */
 package bit;
 
+import Model.Customer;
 import login.Login;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 /**
  *
@@ -28,8 +32,20 @@ public class Bit {
 //       
 //        session.close();
      
-        Login login =new Login();
-        login.main(null);
+        //Login login =new Login();
+        //login.main(null);
+        Customer customer=new Customer();
+        customer.setId(1);
+        customer.setUserName("Dulaj");
+        
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session=sessionFactory.openSession();
+        session.beginTransaction();
+        session.save(customer);
+        session.getTransaction().commit();
+        session.close();
+        
+        
         
     }
 
